@@ -1,0 +1,24 @@
+// src/components/Footer.js
+
+export function createFooter() {
+  return `
+    <div class="footer-grid">
+      <div class="footer-column" id="footer-about">
+        <img src="src/public/images/fiestalogo.png" alt="Mr. Cheesecake Logo" class="footer-logo">
+        <p>Crafting the perfect cheesecakes with love, premium ingredients, and traditional techniques since 2018.</p>
+      </div>
+
+      </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mr. Cheesecake. All rights reserved.</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  `;
+}
