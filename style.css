@@ -34,22 +34,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: #ffffff;
   border-bottom: 1px solid #e0e0e0;
 }
 
-/* --- Logo Styling (for image tag) --- */
-.header-logo .site-logo {
-  height: 80px; /* Adjust as needed */
-  width: auto; /* Maintain aspect ratio */
-  max-width: 250px; /* Ensure it doesn't get too big */
-  display: block; /* Removes extra space below image */
-  border-radius: 100px;
-  border: 2px solid #000;
+.header-logo a {
+  display: inline-block;
 }
 
-header nav a {
+.header-logo .site-logo {
+  height: 60px;
+  width: auto;
+  display: block;
+  border-radius: 0; /* Removing previous styles */
+  border: none;
+}
+
+.main-nav a {
   margin-left: 1.5rem;
   text-decoration: none;
   color: #333;
@@ -57,12 +59,11 @@ header nav a {
   transition: color 0.2s ease-in-out;
 }
 
-header nav a:hover {
-  color: #c8a2c8; /* A nice lilac color for hover */
+.main-nav a:hover {
+  color: #c8a2c8;
 }
 
-/* Style for the currently active page link */
-header nav a.active {
+.main-nav a.active {
   color: #c8a2c8;
   border-bottom: 2px solid #c8a2c8;
   padding-bottom: 4px;
@@ -78,7 +79,6 @@ footer {
 
 .footer-grid {
   display: grid;
-  /* Creates a responsive grid: 4 columns on large screens, 2 on medium, 1 on small */
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
   max-width: 1200px;
@@ -139,23 +139,18 @@ footer {
   color: #ffffff;
 }
 
-/* --- Footer Logo Styling --- */
 .footer-column .footer-logo {
-  height: 100px; /* Adjust height for the footer logo */
-  width: auto; /* Maintain aspect ratio */
-  display: block; /* Removes extra space below image */
-  margin-bottom: 1rem; /* Space between logo and text */
-}
-
-/* If you want rounding for the footer logo too */
-.footer-column .footer-logo {
-  border-radius: 5px; /* Subtle rounding, adjust as needed */
+  height: 100px;
+  width: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
 /* --- Hero Section Styling --- */
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Create two equal columns */
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
   max-width: 1200px;
@@ -164,7 +159,7 @@ footer {
 }
 
 .hero-text h1 {
-  font-size: 3.5rem; /* Large, impactful text */
+  font-size: 3.5rem;
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
@@ -219,10 +214,10 @@ footer {
 
 /* --- Product Card Styling --- */
 .product-card {
+  position: relative;
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   transition:
@@ -240,13 +235,14 @@ footer {
   color: inherit;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Allows the link wrapper to fill the space */
+  flex-grow: 1;
 }
 
 .product-card-image {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  border-radius: 7px 7px 0 0; /* Match parent's border radius */
 }
 
 .product-card-category {
@@ -271,12 +267,11 @@ footer {
   color: #666;
   line-height: 1.5;
   margin: 0 1.5rem;
-  flex-grow: 1; /* Pushes the button to the bottom */
 }
 
 .product-card-action {
   padding: 1.5rem;
-  margin-top: auto; /* Pushes action to the bottom of the card */
+  margin-top: auto;
 }
 
 .btn-secondary {
@@ -340,4 +335,120 @@ footer {
   background-color: #333;
   color: #fff;
   border-color: #333;
+}
+
+/* --- Responsive Styles --- */
+/* Hamburger Button - Hidden on Desktop by default */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  z-index: 1001;
+}
+
+.hamburger-icon,
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+  display: block;
+  background-color: #333;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-icon::before {
+  transform: translateY(-8px);
+}
+
+.hamburger-icon::after {
+  transform: translateY(8px);
+}
+
+/* Mobile styles (screens 768px or less) */
+@media (max-width: 768px) {
+  /* --- Header --- */
+  .nav-container {
+    display: none; /* Hide desktop nav container */
+  }
+
+  .hamburger-btn {
+    display: block; /* Show hamburger button */
+  }
+  
+  /* --- Hero --- */
+  .hero {
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 1.5rem;
+    text-align: left;
+    margin-top: 2rem;
+    padding: 0 1rem; /* Reduce side padding */
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+  
+  /* --- Products Grid --- */
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .featured-flavors, .all-flavors {
+    padding: 0 1rem;
+  }
+
+  /* --- Product Cards --- */
+  .product-card-image {
+    height: 180px;
+  }
+  
+  .product-card-title {
+    font-size: 1rem;
+    margin: 0.75rem 1rem 0.25rem;
+  }
+
+  .product-card-description {
+    font-size: 0.8rem;
+    margin: 0 1rem;
+  }
+
+  .product-card-action {
+    padding: 1rem;
+  }
+}
+
+/* --- Mobile Navigation Overlay --- */
+/* These are outside the media query because they define the 'nav-open' state */
+.nav-container.nav-open {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+  padding-top: 5rem;
+  z-index: 1000;
+}
+
+.nav-container.nav-open .main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-container.nav-open .nav-link {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
 }

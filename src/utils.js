@@ -5,6 +5,22 @@ async function loadTemplate(path) {
   return template;
 }
 
+// Attaches the event listener for the hamburger menu
+function setupMobileMenu() {
+  const hamburgerBtn = document.querySelector('.hamburger-btn');
+  const navContainer = document.querySelector('.nav-container');
+
+  if (hamburgerBtn && navContainer) {
+    hamburgerBtn.addEventListener('click', () => {
+      navContainer.classList.toggle('nav-open');
+      hamburgerBtn.setAttribute(
+        'aria-expanded',
+        navContainer.classList.contains('nav-open')
+      );
+    });
+  }
+}
+
 // function to load the header and footer
 export async function loadHeaderFooter() {
   const headerTemplate = await loadTemplate('/partials/header.html');
@@ -13,18 +29,19 @@ export async function loadHeaderFooter() {
 
   const footerTemplate = await loadTemplate('/partials/footer.html');
   const footerElement = document.querySelector('footer');
-  footerElement.innerHTML = footerTemplate;
+  footerElement.innerHTML = footerElement.innerHTML + footerTemplate;
+
+  // Set up the mobile menu after the header is loaded
+  setupMobileMenu();
 }
 
 // function to highlight the active nav link
 export function highlightActiveLink() {
   const currentPage = window.location.pathname;
-  // If on the root path, consider it the same as index.html
-  const activePage = currentPage === '/' ? '/index.html' : currentPage.replace('index.html', '');
+  const activePage = currentPage === '/' ? '/' : currentPage.replace('index.html', '');
 
   const navLinks = document.querySelectorAll('nav a');
   navLinks.forEach(link => {
-    // Use getAttribute to get the exact href value
     if (link.getAttribute('href') === activePage) {
       link.classList.add('active');
     }
