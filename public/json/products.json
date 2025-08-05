@@ -1,0 +1,506 @@
+[
+  {
+    "id": "1-classic-ny",
+    "name": "New York Style Cheesecake",
+    "image": "/images/NewYorkStyle.webp",
+    "description": "The rich and creamy classic, set atop a golden graham cracker crust.",
+    "category": "Classic",
+    "isNutFree": true
+  },
+  {
+    "id": "2-strawberry-swirl",
+    "name": "Strawberry Swirl Cheesecake",
+    "image": "/images/StrawberrySwirl.webp",
+    "description": "Our classic cheesecake with beautiful and delicious strawberry swirls.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "3-triple-chocolate",
+    "name": "Triple Chocolate Cheesecake",
+    "image": "/images/ChocolateSunday.webp",
+    "description": "An intensely rich and decadent dark chocolate cheesecake for the true chocolate lover.",
+    "category": "Chocolate",
+    "isNutFree": true
+  },
+  {
+    "id": "4-blueberry-lemon",
+    "name": "Blueberry Lemon Cheesecake",
+    "image": "/images/BlueberryLemon.webp",
+    "description": "A zesty lemon cheesecake bursting with a sweet blueberry swirl.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "5-pecan-praline",
+    "name": "Pecan Pie Cheesecake",
+    "image": "/images/PecanPie.webp",
+    "description": "A delightful combination of pecan pie and creamy cheesecake.",
+    "category": "Classic",
+    "isNutFree": false
+  },
+  {
+    "id": "6-key-lime",
+    "name": "Key Lime Cheesecake",
+    "image": "/images/KeyLimePie.webp",
+    "description": "The perfect blend of tart key lime pie and rich, creamy cheesecake.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "7-oreo-crunch",
+    "name": "Oreo Crunch Cheesecake",
+    "image": "/images/Oreo.webp",
+    "description": "A cookies and cream dream, packed with real Oreo cookie pieces.",
+    "category": "Chocolate",
+    "isNutFree": true
+  },
+  {
+    "id": "8-german-chocolate-cheese",
+    "name": "German Chocolate Cheesecake",
+    "image": "/images/GermanChocolateCheese.webp",
+    "description": "A cheesecake version of the classic cake with coconut-pecan frosting.",
+    "category": "Chocolate",
+    "isNutFree": false
+  },
+  {
+    "id": "9-cookie-dough",
+    "name": "Cookie Dough Cheesecake",
+    "image": "/images/CookieDough.webp",
+    "description": "A cheesecake lover's fantasy, with chunks of edible cookie dough.",
+    "category": "Classic",
+    "isNutFree": true
+  },
+  {
+    "id": "10-red-velvet",
+    "name": "Red Velvet Cheesecake",
+    "image": "/images/RedVelvet.webp",
+    "description": "A stunning layered dessert combining red velvet cake and cheesecake.",
+    "category": "Classic",
+    "isNutFree": true
+  },
+  {
+    "id": "11-banana-foster",
+    "name": "Banana Foster Cheesecake",
+    "image": "/images/BananaFoster.webp",
+    "description": "A spectacular cheesecake with the rich flavors of bananas foster.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "12-horchata",
+    "name": "Horchata Cheesecake",
+    "image": "/images/Horchata.webp",
+    "description": "A unique cheesecake with the creamy, cinnamon-spiced flavor of horchata.",
+    "category": "Other",
+    "isNutFree": true
+  },
+  {
+    "id": "13-apple-butter",
+    "name": "Apple Butter Cheesecake",
+    "image": "/images/AppleButter.webp",
+    "description": "A cozy cheesecake with the warm, spiced flavor of apple butter.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "14-smores",
+    "name": "S'mores Cheesecake",
+    "image": "/images/Smores.webp",
+    "description": "A campfire classic with a graham cracker crust, chocolate, and toasted marshmallow.",
+    "category": "Chocolate",
+    "isNutFree": true
+  },
+  {
+    "id": "15-turtle",
+    "name": "Turtle Cheesecake",
+    "image": "/images/Turtle.webp",
+    "description": "A rich cheesecake with layers of caramel, chocolate, and pecans.",
+    "category": "Chocolate",
+    "isNutFree": false
+  },
+  {
+    "id": "16-peanut-butter",
+    "name": "Peanut Butter Cheesecake",
+    "image": "/images/PeanutButter.webp",
+    "description": "An unbelievably creamy cheesecake for the ultimate peanut butter fan.",
+    "category": "Chocolate",
+    "isNutFree": false
+  },
+  {
+    "id": "17-banana-pudding",
+    "name": "Banana Pudding Cheesecake",
+    "image": "/images/BananaPudding.webp",
+    "description": "A southern classic reinvented as a rich and creamy cheesecake.",
+    "category": "Classic",
+    "isNutFree": true
+  },
+  {
+    "id": "18-dark-cherry",
+    "name": "Dark Cherry Cheesecake",
+    "image": "/images/DarkCherry.webp",
+    "description": "A creamy cheesecake with a sweet and tart dark cherry topping.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "19-mint-chip",
+    "name": "Mint Chocolate Chip Cheesecake",
+    "image": "/images/MintChocolateChip.webp",
+    "description": "A cool and refreshing mint cheesecake loaded with chocolate chips.",
+    "category": "Chocolate",
+    "isNutFree": true
+  },
+  {
+    "id": "20-white-raspberry",
+    "name": "White Chocolate Raspberry Cheesecake",
+    "image": "/images/WhiteRaspberry.webp",
+    "description": "A delicate white chocolate cheesecake with a raspberry swirl.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "21-strawberry-lemonade-cake",
+    "name": "Strawberry Lemonade Cake",
+    "image": "/images/StrawberryLemonadeCake.webp",
+    "description": "A refreshing cake with the sweet and tangy flavors of strawberry and lemonade.",
+    "category": "Cake",
+    "isNutFree": true
+  },
+  {
+    "id": "22-cinnamon-roll-cheese",
+    "name": "Cinnamon Roll Cheesecake",
+    "image": "/images/CinnamonRoll.webp",
+    "description": "All the goodness of a cinnamon roll transformed into a delicious cheesecake.",
+    "category": "Classic",
+    "isNutFree": true
+  },
+  {
+    "id": "23-lemon-curd",
+    "name": "Lemon Curd Cheesecake",
+    "image": "/images/LemonCurd.webp",
+    "description": "A bright and tangy cheesecake topped with a smooth, homemade lemon curd.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "24-fruity-pebbles",
+    "name": "Fruity Pebbles Cheesecake",
+    "image": "/images/FruityPebbles.webp",
+    "description": "A fun, colorful, and nostalgic cheesecake with a fruity pebbles crust.",
+    "category": "Other",
+    "isNutFree": true
+  },
+  {
+    "id": "25-chocolate-oreo",
+    "name": "Chocolate Oreo Cheesecake",
+    "image": "/images/ChocolateOreo.webp",
+    "description": "A chocolate lover's dream, loaded with chunks of Oreo cookies.",
+    "category": "Chocolate",
+    "isNutFree": true
+  },
+  {
+    "id": "26-orangesickle",
+    "name": "Orangesicle Cheesecake",
+    "image": "/images/Orangesickle.webp",
+    "description": "A creamy cheesecake capturing the classic orange and vanilla flavor.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "27-pinacolada",
+    "name": "Piña Colada Cheesecake",
+    "image": "/images/Pinacolada.webp",
+    "description": "A tropical escape with flavors of pineapple and coconut.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "28-turtle-poke-cake",
+    "name": "Turtle Poke Cake",
+    "image": "/images/turtlepokecake.webp",
+    "description": "A delicious cake infused with caramel, chocolate, and pecans.",
+    "category": "Cake",
+    "isNutFree": false
+  },
+  {
+    "id": "29-strawberry-oatmeal",
+    "name": "Strawberry Oatmeal Cookie Cheesecake",
+    "image": "/images/StrawberryOatmealCookie.webp",
+    "description": "A unique cheesecake with a chewy oatmeal cookie crust and strawberry swirls.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "30-banana-caramel-cake",
+    "name": "Banana Caramel Cake with Pecans",
+    "image": "/images/BananaCaramelCake.webp",
+    "description": "A moist banana and caramel cake topped with crunchy pecans.",
+    "category": "Cake",
+    "isNutFree": false
+  },
+  {
+    "id": "31-black-forest",
+    "name": "Black Forest Cheesecake",
+    "image": "/images/BlackForest.webp",
+    "description": "A rich chocolate cheesecake with a cherry filling and whipped cream.",
+    "category": "Chocolate",
+    "isNutFree": true
+  },
+  {
+    "id": "32-triple-strawberry",
+    "name": "Triple Strawberry Cheesecake",
+    "image": "/images/TripleStrawberry.webp",
+    "description": "Layers of fresh strawberries, strawberry filling, and strawberry cheesecake.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "33-reese-peanut-butter-cake",
+    "name": "Reese's Peanut Butter Cake",
+    "image": "/images/ReesePeanutbutter.webp",
+    "description": "A peanut butter lover's dream cake with Reese's cups and chocolate drizzle.",
+    "category": "Cake",
+    "isNutFree": false
+  },
+  {
+    "id": "34-german-chocolate-cake",
+    "name": "German Chocolate Cake",
+    "image": "/images/GermanChocolate.webp",
+    "description": "Classic German chocolate cake with a rich coconut-pecan frosting.",
+    "category": "Cake",
+    "isNutFree": false
+  },
+  {
+    "id": "35-pineapple-carrot",
+    "name": "Pineapple Carrot Cheesecake",
+    "image": "/images/PineappleCarrot.webp",
+    "description": "A tropical twist on carrot cake cheesecake with sweet pineapple.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "36-chocolate-nutella",
+    "name": "Chocolate Nutella Cheesecake",
+    "image": "/images/ChocolateNutella.webp",
+    "description": "A decadent cheesecake with Nutella, topped with fresh strawberries.",
+    "category": "Chocolate",
+    "isNutFree": false
+  },
+  {
+    "id": "37-small-carrot-cake",
+    "name": "6 inch Carrot Cake",
+    "image": "/images/SmallCarrot.webp",
+    "description": "A personal-sized, classic carrot cake with cream cheese frosting.",
+    "category": "Cake",
+    "isNutFree": true
+  },
+  {
+    "id": "38-italian-cream-cake",
+    "name": "Italian Cream Cake",
+    "image": "/images/ItallianCream.webp",
+    "description": "A rich, moist cake with coconut and pecans, covered in cream cheese frosting.",
+    "category": "Cake",
+    "isNutFree": false
+  },
+  {
+    "id": "39-chocolate-espresso",
+    "name": "Chocolate Espresso Cheesecake",
+    "image": "/images/ChocolateEspresso.webp",
+    "description": "A smooth chocolate cheesecake infused with a bold espresso flavor.",
+    "category": "Chocolate",
+    "isNutFree": true
+  },
+  {
+    "id": "40-half-strawberry-caramel",
+    "name": "Half Strawberry & Caramel Cheesecake",
+    "image": "/images/HalfStrawberryHalfCaramel.webp",
+    "description": "The best of both worlds: one half strawberry, one half caramel.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "41-mint-chocolate-cake-white",
+    "name": "Mint Chocolate Cake (White Icing)",
+    "image": "/images/MintChocolateCake.webp",
+    "description": "A refreshing mint chocolate cake with a smooth white icing.",
+    "category": "Cake",
+    "isNutFree": true
+  },
+  {
+    "id": "42-mint-chocolate-cake-dark",
+    "name": "Mint Chocolate Cake (Dark Icing)",
+    "image": "/images/MintChocolateCakeDark.webp",
+    "description": "A dark, rich mint chocolate cake for a decadent treat.",
+    "category": "Cake",
+    "isNutFree": true
+  },
+  {
+    "id": "43-large-carrot-cake",
+    "name": "Large Carrot Cake",
+    "image": "/images/LargeCarrotCake.webp",
+    "description": "Our classic, large carrot cake, perfect for sharing.",
+    "category": "Cake",
+    "isNutFree": true
+  },
+  {
+    "id": "44-pumpkin-pie-cheese",
+    "name": "Pumpkin Pie Cheesecake",
+    "image": "/images/PumpkinPie.webp",
+    "description": "A seasonal favorite combining the best of pumpkin pie and cheesecake.",
+    "category": "Classic",
+    "isNutFree": true
+  },
+  {
+    "id": "45-espresso-coffee",
+    "name": "Espresso Coffee Cheesecake",
+    "image": "/images/EspressoCoffee.webp",
+    "description": "A coffee lover's delight with a bold espresso-infused cheesecake.",
+    "category": "Other",
+    "isNutFree": true
+  },
+  {
+    "id": "46-strawberry-cheese",
+    "name": "Strawberry Cheesecake",
+    "image": "/images/Strawberry.webp",
+    "description": "Our classic cheesecake topped with a sweet strawberry glaze.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "47-raspberry-chocolate-cake",
+    "name": "Raspberry Chocolate Cake",
+    "image": "/images/RaspberryChocolateCake.webp",
+    "description": "A rich chocolate cake adorned with fresh, tart raspberries.",
+    "category": "Cake",
+    "isNutFree": true
+  },
+  {
+    "id": "48-russian-chocolate-cake",
+    "name": "Russian Chocolate Cake",
+    "image": "/images/RussianChocolateCake.webp",
+    "description": "A decadent chocolate cake with Russian cream and caramel icing.",
+    "category": "Cake",
+    "isNutFree": true
+  },
+  {
+    "id": "49-chocolate-and-strawberries-cake",
+    "name": "Chocolate Cake with Strawberries",
+    "image": "/images/ChocolateAndStrawberries.webp",
+    "description": "Classic chocolate cake made even better with fresh strawberries.",
+    "category": "Cake",
+    "isNutFree": true
+  },
+  {
+    "id": "50-white-chocolate-cake",
+    "name": "White Cake with Chocolate Icing",
+    "image": "/images/WhiteChocolate.webp",
+    "description": "A simple white cake topped with a rich, delicious chocolate icing.",
+    "category": "Cake",
+    "isNutFree": true
+  },
+  {
+    "id": "51-banoffee-pie",
+    "name": "Banoffee Pie",
+    "image": "/images/Banoffee.webp",
+    "description": "A classic English dessert pie with bananas, cream, and toffee.",
+    "category": "Other",
+    "isNutFree": true
+  },
+  {
+    "id": "52-pineapple-upside-down-cake",
+    "name": "Pineapple Upside Down Cake",
+    "image": "/images/PineappleUpsidedown.webp",
+    "description": "A retro classic with a sweet caramelized pineapple topping.",
+    "category": "Cake",
+    "isNutFree": true
+  },
+  {
+    "id": "53-chocolate-chip-cookie-dough-crust",
+    "name": "Chocolate Chip Cookie Dough Cheesecake",
+    "image": "/images/ChocolateChipCookieDough.webp",
+    "description": "The ultimate cookie lover's cheesecake with a cookie crust and dough.",
+    "category": "Classic",
+    "isNutFree": true
+  },
+  {
+    "id": "54-dulce-de-leche",
+    "name": "Dulce de Leche Cheesecake",
+    "image": "/images/DulcedeLeche.webp",
+    "description": "A creamy cheesecake with rich swirls of dulce de leche caramel.",
+    "category": "Classic",
+    "isNutFree": true
+  },
+  {
+    "id": "55-double-strawberry",
+    "name": "Double Strawberry Cheesecake",
+    "image": "/images/DoubleStrawberry.webp",
+    "description": "An extra dose of strawberry goodness in this rich cheesecake.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "56-gingerbread-man",
+    "name": "Gingerbread Man Cheesecake",
+    "image": "/images/GingerbreadMan.webp",
+    "description": "A festive cheesecake with the warm spices of gingerbread.",
+    "category": "Classic",
+    "isNutFree": true
+  },
+  {
+    "id": "57-ny-orange-cranberry",
+    "name": "New York Cheesecake with Orange & Cranberries",
+    "image": "/images/NewYorkWithOrangeCranberries.webp",
+    "description": "A holiday twist on our classic with orange and cranberry.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "58-raspberry-cheese",
+    "name": "Raspberry Cheesecake",
+    "image": "/images/Raspberry.webp",
+    "description": "A smooth cheesecake with a tangy and sweet raspberry swirl.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "59-bavarian-cream-banana",
+    "name": "Bavarian Cream with Bananas Cheesecake",
+    "image": "/images/BavarianCreamBananas.webp",
+    "description": "A light Bavarian cream cheesecake with a layer of sweet bananas.",
+    "category": "Classic",
+    "isNutFree": true
+  },
+  {
+    "id": "60-dark-forest",
+    "name": "Dark Forest Cheesecake",
+    "image": "/images/DarkForest.webp",
+    "description": "A decadent chocolate cheesecake with a rich cherry filling.",
+    "category": "Chocolate",
+    "isNutFree": true
+  },
+  {
+    "id": "61-pineapple-upside-down-cheese",
+    "name": "Pineapple Upside Down Cheesecake",
+    "image": "/images/PineappleUpsidedownCheese.webp",
+    "description": "A cheesecake take on the classic cake with a caramelized pineapple topping.",
+    "category": "Fruit",
+    "isNutFree": true
+  },
+  {
+    "id": "62-carrot-cake-cheese",
+    "name": "Carrot Cake Cheesecake",
+    "image": "/images/CarrotCakeCheese.webp",
+    "description": "Layers of moist carrot cake and creamy cheesecake in one amazing dessert.",
+    "category": "Classic",
+    "isNutFree": true
+  },
+  {
+    "id": "63-simple-carrot-cake",
+    "name": "Simple Carrot Cake",
+    "image": "/images/CarrotCake.webp.webp",
+    "description": "A classic carrot cake with simple, delicious cream cheese frosting.",
+    "category": "Cake",
+    "isNutFree": true
+  }
+]
