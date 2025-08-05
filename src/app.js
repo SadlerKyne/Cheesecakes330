@@ -1,35 +1,20 @@
-// src/app.js
-import { createHeader } from './components/Header.js';
-import { createFooter } from './components/Footer.js';
+import { loadHeaderFooter } from './utils.js';
 
-function initializeCommonComponents() {
-  const headerElement = document.querySelector('header');
-  const footerElement = document.querySelector('footer');
+async function initializeApp() {
+  await loadHeaderFooter();
 
-  if (headerElement) {
-    const tempHeaderDiv = document.createElement('div');
-    tempHeaderDiv.innerHTML = createHeader();
-    while (tempHeaderDiv.firstChild) {
-      headerElement.appendChild(tempHeaderDiv.firstChild);
-    }
-  }
-
-  if (footerElement) {
-    const tempFooterDiv = document.createElement('div');
-    tempFooterDiv.innerHTML = createFooter();
-    while (tempFooterDiv.firstChild) {
-      footerElement.appendChild(tempFooterDiv.firstChild);
-    }
-  }
-
-  // Bonus: Highlight the active navigation link
+  // Highlight the active navigation link after the header is loaded
   const currentPage = window.location.pathname;
-  const navLinks = document.querySelectorAll('.nav-link');
+  // If on the root path, consider it the same as index.html
+  const activePage = currentPage === '/' ? '/index.html' : currentPage;
+
+  const navLinks = document.querySelectorAll('nav a');
   navLinks.forEach(link => {
-    if (link.getAttribute('href') === currentPage) {
+    // Use getAttribute to get the exact href value
+    if (link.getAttribute('href') === activePage) {
       link.classList.add('active');
     }
   });
 }
 
-document.addEventListener('DOMContentLoaded', initializeCommonComponents);
+initializeApp();
