@@ -9,7 +9,7 @@ async function initializeApp() {
   const activePage = currentPage === '/' ? '/index.html' : currentPage;
 
   const navLinks = document.querySelectorAll('nav a');
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     // Use getAttribute to get the exact href value
     if (link.getAttribute('href') === activePage) {
       link.classList.add('active');

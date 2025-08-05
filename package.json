@@ -3,16 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "start": "vite --open",
-  "build": "vite build",
-  "preview": "vite preview",
-  "lint": "eslint . --ext .js",
-  "lint:fix": "eslint . --ext .js --fix",
-  "format": "prettier . --write",
-  "validate": "npm run format && npm run lint"
-},
+  "scripts": {
+    "dev": "vite",
+    "start": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "format": "prettier . --write",
+    "validate": "npm run format && npm run lint"
+  },
   "devDependencies": {
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
