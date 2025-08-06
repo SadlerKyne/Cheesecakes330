@@ -12,6 +12,7 @@ export default defineConfig({
         blog: resolve(__dirname, 'blog/index.html'),
         contact: resolve(__dirname, 'contact/index.html'),
         checkout: resolve(__dirname, 'checkout/index.html'),
+        productDetail: resolve(__dirname, 'product-detail/index.html'), // <-- ADD THIS LINE
       },
     },
   },

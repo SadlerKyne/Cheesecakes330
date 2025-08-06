@@ -337,6 +337,35 @@ footer {
   border-color: #333;
 }
 
+/* --- Type Filters (Cake/Cheesecake) --- */
+.type-filters {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.type-btn {
+  padding: 0.75rem 2rem;
+  border: 2px solid #333;
+  background-color: transparent;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.type-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.type-btn.active {
+  background-color: #333;
+  color: #fff;
+}
+
 /* --- Responsive Styles --- */
 /* Hamburger Button - Hidden on Desktop by default */
 .hamburger-btn {
@@ -378,7 +407,7 @@ footer {
   .hamburger-btn {
     display: block; /* Show hamburger button */
   }
-  
+
   /* --- Hero --- */
   .hero {
     grid-template-columns: 1fr 1fr; /* Two columns */
@@ -395,14 +424,15 @@ footer {
   .hero-text p {
     font-size: 0.9rem;
   }
-  
+
   /* --- Products Grid --- */
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-  
-  .featured-flavors, .all-flavors {
+
+  .featured-flavors,
+  .all-flavors {
     padding: 0 1rem;
   }
 
@@ -410,7 +440,7 @@ footer {
   .product-card-image {
     height: 180px;
   }
-  
+
   .product-card-title {
     font-size: 1rem;
     margin: 0.75rem 1rem 0.25rem;
@@ -437,7 +467,7 @@ footer {
   max-width: 300px;
   height: 100vh;
   background-color: #ffffff;
-  box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   padding-top: 5rem;
   z-index: 1000;
 }
@@ -451,4 +481,80 @@ footer {
 .nav-container.nav-open .nav-link {
   margin: 1.5rem 0;
   font-size: 1.2rem;
+}
+
+
+/* --- Product Detail Page --- */
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-detail-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-title {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.product-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin: 1rem 0;
+}
+
+/* Make it two columns on larger screens */
+@media (min-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.product-card-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 1rem 0; /* Add space below the price, before the button */
+}
+
+/* --- Quantity Selector --- */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.quantity-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.quantity-input {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Hides the arrows on number inputs for a cleaner look */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
