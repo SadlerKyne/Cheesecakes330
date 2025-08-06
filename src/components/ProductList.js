@@ -7,7 +7,9 @@ import { ProductCard } from './ProductCard.js';
  */
 export function renderProductList(productList, containerElement) {
   if (containerElement) {
-    const productsHTML = productList.map(product => ProductCard(product)).join('');
+    const productsHTML = productList
+      .map((product) => ProductCard(product))
+      .join('');
     containerElement.innerHTML = productsHTML;
   } else {
     console.error('Render container for product list not found.');

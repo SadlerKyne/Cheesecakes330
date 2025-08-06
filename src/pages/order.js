@@ -15,11 +15,12 @@ async function initializeOrderPage() {
     const allProducts = await response.json();
 
     const container = document.querySelector('#order-products-grid');
-    
-    const productsHTML = allProducts.map(product => ProductCard(product)).join('');
+
+    const productsHTML = allProducts
+      .map((product) => ProductCard(product))
+      .join('');
 
     container.innerHTML = productsHTML;
-
   } catch (error) {
     console.error('Failed to initialize order page:', error);
   }
