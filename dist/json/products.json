@@ -5,7 +5,9 @@
     "image": "/images/NewYorkStyle.webp",
     "description": "The rich and creamy classic, set atop a golden graham cracker crust.",
     "category": "Classic",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "2-strawberry-swirl",
@@ -13,7 +15,9 @@
     "image": "/images/StrawberrySwirl.webp",
     "description": "Our classic cheesecake with beautiful and delicious strawberry swirls.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "3-triple-chocolate",
@@ -21,7 +25,9 @@
     "image": "/images/ChocolateSunday.webp",
     "description": "An intensely rich and decadent dark chocolate cheesecake for the true chocolate lover.",
     "category": "Chocolate",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "4-blueberry-lemon",
@@ -29,7 +35,9 @@
     "image": "/images/BlueberryLemon.webp",
     "description": "A zesty lemon cheesecake bursting with a sweet blueberry swirl.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "5-pecan-praline",
@@ -37,7 +45,9 @@
     "image": "/images/PecanPie.webp",
     "description": "A delightful combination of pecan pie and creamy cheesecake.",
     "category": "Classic",
-    "isNutFree": false
+    "isNutFree": false,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "6-key-lime",
@@ -45,7 +55,9 @@
     "image": "/images/KeyLimePie.webp",
     "description": "The perfect blend of tart key lime pie and rich, creamy cheesecake.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "7-oreo-crunch",
@@ -53,7 +65,9 @@
     "image": "/images/Oreo.webp",
     "description": "A cookies and cream dream, packed with real Oreo cookie pieces.",
     "category": "Chocolate",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "8-german-chocolate-cheese",
@@ -61,7 +75,9 @@
     "image": "/images/GermanChocolateCheese.webp",
     "description": "A cheesecake version of the classic cake with coconut-pecan frosting.",
     "category": "Chocolate",
-    "isNutFree": false
+    "isNutFree": false,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "9-cookie-dough",
@@ -69,7 +85,9 @@
     "image": "/images/CookieDough.webp",
     "description": "A cheesecake lover's fantasy, with chunks of edible cookie dough.",
     "category": "Classic",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "10-red-velvet",
@@ -77,7 +95,9 @@
     "image": "/images/RedVelvet.webp",
     "description": "A stunning layered dessert combining red velvet cake and cheesecake.",
     "category": "Classic",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "11-banana-foster",
@@ -85,7 +105,9 @@
     "image": "/images/BananaFoster.webp",
     "description": "A spectacular cheesecake with the rich flavors of bananas foster.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "12-horchata",
@@ -93,7 +115,9 @@
     "image": "/images/Horchata.webp",
     "description": "A unique cheesecake with the creamy, cinnamon-spiced flavor of horchata.",
     "category": "Other",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "13-apple-butter",
@@ -101,7 +125,9 @@
     "image": "/images/AppleButter.webp",
     "description": "A cozy cheesecake with the warm, spiced flavor of apple butter.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "14-smores",
@@ -109,7 +135,9 @@
     "image": "/images/Smores.webp",
     "description": "A campfire classic with a graham cracker crust, chocolate, and toasted marshmallow.",
     "category": "Chocolate",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "15-turtle",
@@ -117,7 +145,9 @@
     "image": "/images/Turtle.webp",
     "description": "A rich cheesecake with layers of caramel, chocolate, and pecans.",
     "category": "Chocolate",
-    "isNutFree": false
+    "isNutFree": false,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "16-peanut-butter",
@@ -125,7 +155,9 @@
     "image": "/images/PeanutButter.webp",
     "description": "An unbelievably creamy cheesecake for the ultimate peanut butter fan.",
     "category": "Chocolate",
-    "isNutFree": false
+    "isNutFree": false,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "17-banana-pudding",
@@ -133,7 +165,9 @@
     "image": "/images/BananaPudding.webp",
     "description": "A southern classic reinvented as a rich and creamy cheesecake.",
     "category": "Classic",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "18-dark-cherry",
@@ -141,7 +175,9 @@
     "image": "/images/DarkCherry.webp",
     "description": "A creamy cheesecake with a sweet and tart dark cherry topping.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "19-mint-chip",
@@ -149,7 +185,9 @@
     "image": "/images/MintChocolateChip.webp",
     "description": "A cool and refreshing mint cheesecake loaded with chocolate chips.",
     "category": "Chocolate",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "20-white-raspberry",
@@ -157,7 +195,9 @@
     "image": "/images/WhiteRaspberry.webp",
     "description": "A delicate white chocolate cheesecake with a raspberry swirl.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "21-strawberry-lemonade-cake",
@@ -165,7 +205,9 @@
     "image": "/images/StrawberryLemonadeCake.webp",
     "description": "A refreshing cake with the sweet and tangy flavors of strawberry and lemonade.",
     "category": "Cake",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "22-cinnamon-roll-cheese",
@@ -173,7 +215,9 @@
     "image": "/images/CinnamonRoll.webp",
     "description": "All the goodness of a cinnamon roll transformed into a delicious cheesecake.",
     "category": "Classic",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "23-lemon-curd",
@@ -181,7 +225,9 @@
     "image": "/images/LemonCurd.webp",
     "description": "A bright and tangy cheesecake topped with a smooth, homemade lemon curd.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "24-fruity-pebbles",
@@ -189,7 +235,9 @@
     "image": "/images/FruityPebbles.webp",
     "description": "A fun, colorful, and nostalgic cheesecake with a fruity pebbles crust.",
     "category": "Other",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "25-chocolate-oreo",
@@ -197,7 +245,9 @@
     "image": "/images/ChocolateOreo.webp",
     "description": "A chocolate lover's dream, loaded with chunks of Oreo cookies.",
     "category": "Chocolate",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "26-orangesickle",
@@ -205,7 +255,9 @@
     "image": "/images/Orangesickle.webp",
     "description": "A creamy cheesecake capturing the classic orange and vanilla flavor.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "27-pinacolada",
@@ -213,7 +265,9 @@
     "image": "/images/Pinacolada.webp",
     "description": "A tropical escape with flavors of pineapple and coconut.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "28-turtle-poke-cake",
@@ -221,7 +275,9 @@
     "image": "/images/turtlepokecake.webp",
     "description": "A delicious cake infused with caramel, chocolate, and pecans.",
     "category": "Cake",
-    "isNutFree": false
+    "isNutFree": false,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "29-strawberry-oatmeal",
@@ -229,7 +285,9 @@
     "image": "/images/StrawberryOatmealCookie.webp",
     "description": "A unique cheesecake with a chewy oatmeal cookie crust and strawberry swirls.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "30-banana-caramel-cake",
@@ -237,7 +295,9 @@
     "image": "/images/BananaCaramelCake.webp",
     "description": "A moist banana and caramel cake topped with crunchy pecans.",
     "category": "Cake",
-    "isNutFree": false
+    "isNutFree": false,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "31-black-forest",
@@ -245,7 +305,9 @@
     "image": "/images/BlackForest.webp",
     "description": "A rich chocolate cheesecake with a cherry filling and whipped cream.",
     "category": "Chocolate",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "32-triple-strawberry",
@@ -253,7 +315,9 @@
     "image": "/images/TripleStrawberry.webp",
     "description": "Layers of fresh strawberries, strawberry filling, and strawberry cheesecake.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "33-reese-peanut-butter-cake",
@@ -261,7 +325,9 @@
     "image": "/images/ReesePeanutbutter.webp",
     "description": "A peanut butter lover's dream cake with Reese's cups and chocolate drizzle.",
     "category": "Cake",
-    "isNutFree": false
+    "isNutFree": false,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "34-german-chocolate-cake",
@@ -269,7 +335,9 @@
     "image": "/images/GermanChocolate.webp",
     "description": "Classic German chocolate cake with a rich coconut-pecan frosting.",
     "category": "Cake",
-    "isNutFree": false
+    "isNutFree": false,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "35-pineapple-carrot",
@@ -277,7 +345,9 @@
     "image": "/images/PineappleCarrot.webp",
     "description": "A tropical twist on carrot cake cheesecake with sweet pineapple.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "36-chocolate-nutella",
@@ -285,7 +355,9 @@
     "image": "/images/ChocolateNutella.webp",
     "description": "A decadent cheesecake with Nutella, topped with fresh strawberries.",
     "category": "Chocolate",
-    "isNutFree": false
+    "isNutFree": false,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "37-small-carrot-cake",
@@ -293,7 +365,9 @@
     "image": "/images/SmallCarrot.webp",
     "description": "A personal-sized, classic carrot cake with cream cheese frosting.",
     "category": "Cake",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "38-italian-cream-cake",
@@ -301,7 +375,9 @@
     "image": "/images/ItallianCream.webp",
     "description": "A rich, moist cake with coconut and pecans, covered in cream cheese frosting.",
     "category": "Cake",
-    "isNutFree": false
+    "isNutFree": false,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "39-chocolate-espresso",
@@ -309,7 +385,9 @@
     "image": "/images/ChocolateEspresso.webp",
     "description": "A smooth chocolate cheesecake infused with a bold espresso flavor.",
     "category": "Chocolate",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "40-half-strawberry-caramel",
@@ -317,7 +395,9 @@
     "image": "/images/HalfStrawberryHalfCaramel.webp",
     "description": "The best of both worlds: one half strawberry, one half caramel.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "41-mint-chocolate-cake-white",
@@ -325,7 +405,9 @@
     "image": "/images/MintChocolateCake.webp",
     "description": "A refreshing mint chocolate cake with a smooth white icing.",
     "category": "Cake",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "42-mint-chocolate-cake-dark",
@@ -333,7 +415,9 @@
     "image": "/images/MintChocolateCakeDark.webp",
     "description": "A dark, rich mint chocolate cake for a decadent treat.",
     "category": "Cake",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "43-large-carrot-cake",
@@ -341,7 +425,9 @@
     "image": "/images/LargeCarrotCake.webp",
     "description": "Our classic, large carrot cake, perfect for sharing.",
     "category": "Cake",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "44-pumpkin-pie-cheese",
@@ -349,7 +435,9 @@
     "image": "/images/PumpkinPie.webp",
     "description": "A seasonal favorite combining the best of pumpkin pie and cheesecake.",
     "category": "Classic",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "45-espresso-coffee",
@@ -357,7 +445,9 @@
     "image": "/images/EspressoCoffee.webp",
     "description": "A coffee lover's delight with a bold espresso-infused cheesecake.",
     "category": "Other",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "46-strawberry-cheese",
@@ -365,7 +455,9 @@
     "image": "/images/Strawberry.webp",
     "description": "Our classic cheesecake topped with a sweet strawberry glaze.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "47-raspberry-chocolate-cake",
@@ -373,7 +465,9 @@
     "image": "/images/RaspberryChocolateCake.webp",
     "description": "A rich chocolate cake adorned with fresh, tart raspberries.",
     "category": "Cake",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "48-russian-chocolate-cake",
@@ -381,7 +475,9 @@
     "image": "/images/RussianChocolateCake.webp",
     "description": "A decadent chocolate cake with Russian cream and caramel icing.",
     "category": "Cake",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "49-chocolate-and-strawberries-cake",
@@ -389,7 +485,9 @@
     "image": "/images/ChocolateAndStrawberries.webp",
     "description": "Classic chocolate cake made even better with fresh strawberries.",
     "category": "Cake",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "50-white-chocolate-cake",
@@ -397,7 +495,9 @@
     "image": "/images/WhiteChocolate.webp",
     "description": "A simple white cake topped with a rich, delicious chocolate icing.",
     "category": "Cake",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "51-banoffee-pie",
@@ -405,7 +505,9 @@
     "image": "/images/Banoffee.webp",
     "description": "A classic English dessert pie with bananas, cream, and toffee.",
     "category": "Other",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "52-pineapple-upside-down-cake",
@@ -413,7 +515,9 @@
     "image": "/images/PineappleUpsidedown.webp",
     "description": "A retro classic with a sweet caramelized pineapple topping.",
     "category": "Cake",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cake",
+    "price": 35.00
   },
   {
     "id": "53-chocolate-chip-cookie-dough-crust",
@@ -421,7 +525,9 @@
     "image": "/images/ChocolateChipCookieDough.webp",
     "description": "The ultimate cookie lover's cheesecake with a cookie crust and dough.",
     "category": "Classic",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "54-dulce-de-leche",
@@ -429,7 +535,9 @@
     "image": "/images/DulcedeLeche.webp",
     "description": "A creamy cheesecake with rich swirls of dulce de leche caramel.",
     "category": "Classic",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "55-double-strawberry",
@@ -437,7 +545,9 @@
     "image": "/images/DoubleStrawberry.webp",
     "description": "An extra dose of strawberry goodness in this rich cheesecake.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "56-gingerbread-man",
@@ -445,7 +555,9 @@
     "image": "/images/GingerbreadMan.webp",
     "description": "A festive cheesecake with the warm spices of gingerbread.",
     "category": "Classic",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "57-ny-orange-cranberry",
@@ -453,7 +565,9 @@
     "image": "/images/NewYorkWithOrangeCranberries.webp",
     "description": "A holiday twist on our classic with orange and cranberry.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "58-raspberry-cheese",
@@ -461,7 +575,9 @@
     "image": "/images/Raspberry.webp",
     "description": "A smooth cheesecake with a tangy and sweet raspberry swirl.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "59-bavarian-cream-banana",
@@ -469,7 +585,9 @@
     "image": "/images/BavarianCreamBananas.webp",
     "description": "A light Bavarian cream cheesecake with a layer of sweet bananas.",
     "category": "Classic",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "60-dark-forest",
@@ -477,7 +595,9 @@
     "image": "/images/DarkForest.webp",
     "description": "A decadent chocolate cheesecake with a rich cherry filling.",
     "category": "Chocolate",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "61-pineapple-upside-down-cheese",
@@ -485,7 +605,9 @@
     "image": "/images/PineappleUpsidedownCheese.webp",
     "description": "A cheesecake take on the classic cake with a caramelized pineapple topping.",
     "category": "Fruit",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "62-carrot-cake-cheese",
@@ -493,7 +615,9 @@
     "image": "/images/CarrotCakeCheese.webp",
     "description": "Layers of moist carrot cake and creamy cheesecake in one amazing dessert.",
     "category": "Classic",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cheesecake",
+    "price": 45.00
   },
   {
     "id": "63-simple-carrot-cake",
@@ -501,6 +625,8 @@
     "image": "/images/CarrotCake.webp.webp",
     "description": "A classic carrot cake with simple, delicious cream cheese frosting.",
     "category": "Cake",
-    "isNutFree": true
+    "isNutFree": true,
+    "type": "Cake",
+    "price": 35.00
   }
 ]

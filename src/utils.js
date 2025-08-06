@@ -5,7 +5,7 @@ async function loadTemplate(path) {
   return template;
 }
 
-// Attaches the event listener for the hamburger menu
+// / Sets up the mobile navigation toggle.
 function setupMobileMenu() {
   const hamburgerBtn = document.querySelector('.hamburger-btn');
   const navContainer = document.querySelector('.nav-container');
@@ -35,15 +35,23 @@ export async function loadHeaderFooter() {
   setupMobileMenu();
 }
 
-// function to highlight the active nav link
+// Loads an HTML template from a given path.
 export function highlightActiveLink() {
   const currentPage = window.location.pathname;
-  const activePage = currentPage === '/' ? '/' : currentPage.replace('index.html', '');
+  const activePage =
+    currentPage === '/' ? '/' : currentPage.replace('index.html', '');
 
   const navLinks = document.querySelectorAll('nav a');
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     if (link.getAttribute('href') === activePage) {
       link.classList.add('active');
     }
   });
 }
+
+export function getParam(param) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  return urlParams.get(param);
+  }
+
