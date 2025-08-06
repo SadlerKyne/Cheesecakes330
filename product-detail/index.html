@@ -1,19 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Details - Mr. Cheesecake</title>
-    <link rel="icon" type="image/png" href="/images/faviconM.png" />
-    <link rel="stylesheet" href="/style.css" />
+    <title>Product Details | Sweet Dreams Bakery</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vanilla-js-calendar@2.9.4/build/vanilla-js-calendar.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
+    <header id="main-header"></header>
 
-    <main id="product-detail-container" class="page-container"></main>
+    <main class="container">
+      <div id="product-detail-container">
+        <p>Loading product details...</p>
+      </div>
+    </main>
 
-    <footer></footer>
+    <footer id="main-footer"></footer>
 
-    <script type="module" src="/src/pages/product-detail.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/vanilla-js-calendar@2.9.4/build/vanilla-js-calendar.min.js"
+      defer
+    ></script>
+    <script type="module" src="../src/pages/product-detail.js"></script>
   </body>
 </html>

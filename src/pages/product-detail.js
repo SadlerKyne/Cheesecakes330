@@ -6,12 +6,13 @@ import {
   } from '../utils.js';
   import { setLocalStorage, getLocalStorage } from '../lib/localStorage.js';
   import { updateCartIcon } from '../components/ShoppingCart.js';
+  import { getUpcomingEvents } from '../api/calendar-api.js';
   
   let allProducts = [];
   const CART_KEY = 'so-cart';
   
   /**
-   * Renders the product's details into the page.
+   * Renders the product's details into the page, including the calendar placeholder.
    * @param {object} product The product object to display.
    */
   function renderProductDetails(product) {
@@ -19,7 +20,9 @@ import {
     container.innerHTML = `
       <section class="product-detail">
         <div class="product-image-container">
-          <img src="${product.image}" alt="${product.name}" class="product-detail-image">
+          <img src="${product.image}" alt="${
+            product.name
+          }" class="product-detail-image">
         </div>
         <div class="product-info-container">
           <h2 class="product-title">${product.name}</h2>
@@ -32,11 +35,81 @@ import {
             <button type="button" class="quantity-btn plus" aria-label="Increase quantity">+</button>
           </div>
   
-          <button class="btn-primary" id="addToCartBtn" data-id="${product.id}">Add to Cart</button>
+          <button class="btn-primary" id="addToCartBtn" data-id="${
+            product.id
+          }">Add to Cart</button>
+  
+          <div id="availability-section">
+            <h4>Baker's Availability</h4>
+            <p class="availability-subtitle">Days in gray are booked.</p>
+            <div id="calendar-container"></div>
+          </div>
         </div>
       </section>
     `;
   }
+  
+  /**
+   * Initializes a calendar and disables days that are already booked.
+   * @param {Array} bookedEvents List of Google Calendar event objects.
+   */
+  function renderCalendar(bookedEvents) {
+    const calendarContainer = document.querySelector('#calendar-container');
+    if (!calendarContainer) {
+      console.error('Calendar container element not found!');
+      return;
+    }
+  
+    // This function will run once the calendar library is confirmed to be loaded.
+    function initializeCalendar() {
+      const bookedDates = (bookedEvents || []).map((event) => {
+        const date = new Date(event.start.dateTime || event.start.date);
+        return date.toISOString().split('T')[0]; // Format as YYYY-MM-DD
+      });
+  
+      const today = new Date();
+      const maxDate = new Date();
+      maxDate.setDate(today.getDate() + 90);
+  
+      const options = {
+        settings: {
+          range: {
+            min: today.toISOString().split('T')[0],
+            max: maxDate.toISOString().split('T')[0],
+            disabled: bookedDates,
+          },
+          selection: {
+            day: false,
+          },
+          visibility: {
+            theme: 'light',
+            daysOutside: false,
+          },
+        },
+      };
+      
+      calendarContainer.innerHTML = ''; // Clear loading message
+      const calendar = new VanillaCalendar(calendarContainer, options);
+      calendar.init();
+    }
+  
+    // Poll to check if the VanillaCalendar library is loaded.
+    const interval = setInterval(() => {
+      if (window.VanillaCalendar) {
+        clearInterval(interval);
+        initializeCalendar();
+      }
+    }, 100);
+  
+    // Fallback timeout in case the script fails to load
+    setTimeout(() => {
+      clearInterval(interval);
+      if (!window.VanillaCalendar && calendarContainer.innerHTML === '') {
+         calendarContainer.innerHTML = '<p>Could not load the calendar component.</p>';
+      }
+    }, 5000);
+  }
+  
   
   /**
    * Adds an item with the selected quantity to the cart in localStorage.
@@ -108,17 +181,26 @@ import {
   
       const product = allProducts.find((p) => p.id === productId);
       if (product) {
+        document.title = `${product.name} | Sweet Dreams Bakery`;
         renderProductDetails(product);
         setupQuantitySelector();
         document
           .querySelector('#addToCartBtn')
           .addEventListener('click', () => addToCart(productId));
+  
+        // Fetch events and render the new calendar
+        const events = await getUpcomingEvents();
+        renderCalendar(events);
       } else {
         document.querySelector('#product-detail-container').innerHTML =
           '<h2>Product not found.</h2>';
       }
     } catch (error) {
       console.error('Error initializing page:', error);
+      const calendarContainer = document.querySelector('#calendar-container');
+      if(calendarContainer) {
+        calendarContainer.innerHTML = '<p>Could not load availability.</p>';
+      }
     }
   }
   

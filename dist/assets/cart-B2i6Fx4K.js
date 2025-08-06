@@ -1,4 +1,4 @@
-import{l as u,h as m,a as n,s as p,u as _}from"./utils-BkkW3aVv.js";const o="so-cart";function v(t){return`
+import{l as u,h as m,a as n,s as p,u as _}from"./utils-CmrDYecs.js";const o="so-cart";function v(t){return`
     <li class="cart-card">
       <img src="${t.image}" alt="${t.name}" class="cart-card__image">
       <div class="cart-card__details">
