@@ -1,3 +1,8 @@
+/**
+ * Creates the HTML for a single product card.
+ * @param {object} product The product object to render.
+ * @returns {string} The HTML string for the product card.
+ */
 export function ProductCard(product) {
     const productLink = `/product-detail/?id=${product.id}`;
   

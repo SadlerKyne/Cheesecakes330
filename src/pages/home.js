@@ -12,12 +12,16 @@ function applyFilters() {
 
   // 1. Filter by type (Cheesecake/Cake)
   if (currentTypeFilter !== 'all') {
-    filteredProducts = filteredProducts.filter(product => product.type === currentTypeFilter);
+    filteredProducts = filteredProducts.filter(
+      (product) => product.type === currentTypeFilter
+    );
   }
 
   // 2. Filter by category (Classic/Fruit)
   if (currentCategoryFilter !== 'all') {
-    filteredProducts = filteredProducts.filter(product => product.category === currentCategoryFilter);
+    filteredProducts = filteredProducts.filter(
+      (product) => product.category === currentCategoryFilter
+    );
   }
 
   renderProductList(filteredProducts, container);
@@ -29,20 +33,20 @@ function setupFiltering() {
   const categoryButtons = document.querySelectorAll('.filter-btn');
 
   // Add event listeners for Type buttons (Cheesecake/Cake)
-  typeButtons.forEach(button => {
+  typeButtons.forEach((button) => {
     button.addEventListener('click', () => {
       currentTypeFilter = button.dataset.type;
-      typeButtons.forEach(btn => btn.classList.remove('active'));
+      typeButtons.forEach((btn) => btn.classList.remove('active'));
       button.classList.add('active');
       applyFilters(); // Re-render the list
     });
   });
 
   // Add event listeners for Category buttons (Classic/Fruit)
-  categoryButtons.forEach(button => {
+  categoryButtons.forEach((button) => {
     button.addEventListener('click', () => {
       currentCategoryFilter = button.dataset.category;
-      categoryButtons.forEach(btn => btn.classList.remove('active'));
+      categoryButtons.forEach((btn) => btn.classList.remove('active'));
       button.classList.add('active');
       applyFilters(); // Re-render the list
     });
@@ -62,14 +66,15 @@ async function initHomePage() {
     allProducts = await response.json(); // Store products globally for this script
 
     // Handle Featured Products
-    const featuredProductsContainer = document.querySelector('.featured-flavors .products-grid');
+    const featuredProductsContainer = document.querySelector(
+      '.featured-flavors .products-grid'
+    );
     const featuredProducts = allProducts.slice(0, 3);
     renderProductList(featuredProducts, featuredProductsContainer);
-    
-    // Initial render of all products and setup filtering
-    applyFilters(); 
-    setupFiltering();
 
+    // Initial render of all products and setup filtering
+    applyFilters();
+    setupFiltering();
   } catch (error) {
     console.error('Failed to initialize home page:', error);
   }
