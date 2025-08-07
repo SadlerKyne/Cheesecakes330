@@ -23,23 +23,33 @@ let gisInited = false;
 // --- Public API Key Functions ---
 
 /**
- * Fetches upcoming events by calling our own serverless function.
- * @returns {Promise<Array>} A list of event objects.
+ * Fetches upcoming events from the public baker's calendar using an API key.
+ * @returns {Promise<Array|null>} A list of event objects or null on error.
  */
 export async function getUpcomingEvents() {
-    try {
-      // This path points to the serverless function we just created.
-      const response = await fetch('/.netlify/functions/get-calendar-events');
-      if (!response.ok) {
-        throw new Error(`Serverless function failed: ${response.statusText}`);
-      }
-      const events = await response.json();
-      return events;
-    } catch (error) {
-      console.error('Error fetching events from Netlify function:', error);
-      return []; // Return an empty array on failure
+  const timeMin = new Date().toISOString();
+  const timeMax = new Date(
+    Date.now() + 90 * 24 * 60 * 60 * 1000
+  ).toISOString();
+
+  // This ensures the calendar ID is properly formatted for the URL
+  const encodedCalendarId = encodeURIComponent(CALENDAR_ID);
+
+  const url = `https://www.googleapis.com/calendar/v3/calendars/${encodedCalendarId}/events?key=${API_KEY}&timeMin=${timeMin}&timeMax=${timeMax}&showDeleted=false&singleEvents=true&maxResults=100&orderBy=startTime`;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      const errorBody = await response.text();
+      console.error("Google API Response Error:", errorBody);
+      throw new Error(`Google API error! Status: ${response.status}`);
     }
+    const data = await response.json();
+    return data.items || [];
+  } catch (error) {
+    console.error("Error fetching calendar events:", error);
+    return null;
   }
+}
 
 // --- OAuth 2.0 Functions (for writing events) ---
 
