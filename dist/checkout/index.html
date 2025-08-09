@@ -5,19 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout - Mr. Cheesecake</title>
 
-    <link rel="icon" type="image/png" href="/images/faviconM.png" />
-    <script type="module" crossorigin src="/assets/checkout-DfkMw1TR.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/utils-CmrDYecs.js">
-    <link rel="stylesheet" crossorigin href="/assets/utils-C_ITdnhj.css">
+    <link rel="icon" type="image/png" href="/images/logo_icon/faviconM.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script type="module" crossorigin src="/assets/checkout-Bum0Y-LE.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/utils-C06FxFqR.js">
+    <link rel="modulepreload" crossorigin href="/assets/maps-api-BPrFoTXr.js">
+    <link rel="stylesheet" crossorigin href="/assets/utils-f1bEd9l5.css">
   </head>
   <body>
     <header></header>
 
     <main class="page-container">
       <h1>Checkout</h1>
+      <form id="checkout-form">
+        <div class="checkout-grid">
+          <div class="checkout-form-column">
+            <div id="order-summary" class="order-summary-box">
+              <h3>Order Summary</h3>
+              <p>Subtotal: <span id="subtotal-display"></span></p>
+              <p id="tax-row">Tax (8%): <span id="tax-display"></span></p>
+              <p id="shipping-row">Shipping: <span id="shipping-display"></span></p>
+              <p class="order-total">Total: <span id="total-display"></span></p>
+            </div>
+            
+            <div class="customer-info-box">
+              <h3>Customer Information</h3>
+              <div class="form-group">
+                <label for="full-name">Full Name *</label>
+                <input type="text" id="full-name" name="fullName" required placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+              </div>
+            </div>
+
+            <div id="address-section" class="customer-info-box">
+                <h3>Delivery Address</h3>
+                <div class="form-group">
+                    <label for="street-address">Street Address *</label>
+                    <input type="text" id="street-address" name="streetAddress" placeholder="123 Baker Street" required />
+                </div>
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <input type="text" id="city" name="city" placeholder="Sweet City" required />
+                </div>
+                <div class="form-group">
+                    <label for="state">State *</label>
+                    <input type="text" id="state" name="state" placeholder="SC" required />
+                </div>
+                <div class="form-group">
+                    <label for="zip">Zip Code *</label>
+                    <input type="text" id="zip" name="zip" placeholder="12345" required />
+                </div>
+                <p id="delivery-message"></p>
+            </div>
+            
+            <div class="payment-box">
+                <h3>Payment Information</h3>
+                </div>
+          </div>
+          
+          <div class="checkout-details-column">
+            <div class="pickup-delivery-toggle">
+                <h3>Delivery Method</h3>
+                <div class="toggle-buttons">
+                    <button type="button" class="toggle-btn active" id="delivery-toggle" data-method="delivery">Delivery</button>
+                    <button type="button" class="toggle-btn" id="pickup-toggle" data-method="pickup">Pickup</button>
+                </div>
+            </div>
+
+            <div id="availability-section" class="checkout-card">
+              <h4>Baker's Availability</h4>
+              <p class="availability-subtitle">Booked days are disabled. Orders require 48 hours advance notice.</p>
+              <div id="calendar-container"></div>
+            </div>
+
+            <div id="map-container" class="checkout-card">
+              <h4>Delivery Area</h4>
+              <p class="delivery-area-info">Check if your address is within our delivery zone.</p>
+              <div class="map-embed">
+                <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=31 de Agosto Kalea, 3, 20003 Donostia, Gipuzkoa, Spain&t=&z=14&ie=UTF8&iwloc=B&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <div class="checkout-card" id="pickup-info-card" style="display:none;">
+              <h4>Pickup Information</h4>
+              <p><strong>Sweet Dreams Bakery</strong><br>123 Baker Street, Sweet City, SC 12345</p>
+              <p>We accept cash, credit cards, and contactless payments at pickup.</p>
+            </div>
+          </div>
+        </div>
+        
+        <button type="submit" id="place-order-btn" class="btn-primary" disabled>Place Order</button>
+      </form>
     </main>
 
     <footer></footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
   </body>
 </html>

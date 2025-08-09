@@ -5,16 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog - Mr. Cheesecake</title>
 
-    <link rel="icon" type="image/png" href="/images/faviconM.png" />
-    <script type="module" crossorigin src="/assets/blog-DfkMw1TR.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/utils-CmrDYecs.js">
-    <link rel="stylesheet" crossorigin href="/assets/utils-C_ITdnhj.css">
+    <link rel="icon" type="image/png" href="/images/logo_icon/faviconM.png" />
+    <script type="module" crossorigin src="/assets/blog-BdLAo-hW.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/utils-C06FxFqR.js">
+    <link rel="stylesheet" crossorigin href="/assets/utils-f1bEd9l5.css">
   </head>
   <body>
     <header></header>
 
     <main class="page-container">
-      <h1>From the Kitchen</h1>
+      <div class="blog-header">
+        <h1>Sweet Dreams Blog</h1>
+        <p class="tagline">
+          Behind-the-scenes stories, baking tips, and the latest news from our kitchen.
+        </p>
+      </div>
+
+      <div class="blog-filters">
+        <button class="filter-btn active" data-tag="all">All</button>
+        <button class="filter-btn" data-tag="baking">Tips & Techniques</button>
+        <button class="filter-btn" data-tag="recipes">New Flavors</button>
+        <button class="filter-btn" data-tag="kitchen">Behind the Scenes</button>
+      </div>
+
+      <div id="featured-post-container">
+        </div>
+      <div id="blog-grid" class="posts-grid">
+        </div>
+      
+      <section class="newsletter-section">
+        <h3>Stay Updated</h3>
+        <p>Subscribe to our newsletter for the latest baking tips, new flavors, and special offers.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </section>
     </main>
 
     <footer></footer>

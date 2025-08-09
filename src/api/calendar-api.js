@@ -4,11 +4,9 @@
  * Supports both public read (API Key) and private write (OAuth).
  */
 
-const API_KEY = "AIzaSyB47vwIoirKBJJswju0h4pvq6OBA_ifFSg";
-const CLIENT_ID =
-  "297099279801-k0jup4vr7lon225uvsc58p4t1h2s6ba0.apps.googleusercontent.com";
-const CALENDAR_ID =
-  "6104e981d3230c7d8aea53d366808e33133b935518757d65c3329a09713515e8@group.calendar.google.com";
+const API_KEY = import.meta.env.VITE_GOOGLE_CALENDAR_API_KEY;
+const CLIENT_ID = import.meta.env.VITE_GOOGLE_CALENDAR_CLIENT_ID;
+const CALENDAR_ID = import.meta.env.VITE_GOOGLE_CALENDAR_ID;
 
 // Scopes for reading and writing to the calendar
 const SCOPES = "https://www.googleapis.com/auth/calendar";

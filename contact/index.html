@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - Mr. Cheesecake</title>
 
-    <link rel="icon" type="image/png" href="/images/faviconM.png" />
+    <link rel="icon" type="image/png" href="/images/logo_icon/faviconM.png" />
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
@@ -13,6 +13,69 @@
 
     <main class="page-container">
       <h1>Contact Us</h1>
+      <p class="tagline">
+        Have questions about our cheesecakes or need help with an order? We'd love to
+        hear from you! Reach out using the form below or visit us in person.
+      </p>
+
+      <section class="contact-grid">
+        <div class="contact-form-container">
+          <form id="contact-form" class="form-style">
+            <h3>Send us a message</h3>
+            <div class="form-group-inline">
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" name="fullName" required placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone Number *</label>
+                <input type="tel" id="contact-phone" name="phone" required placeholder="(555) 123-4567" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address *</label>
+              <input type="email" id="contact-email" name="email" required placeholder="your.email@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message *</label>
+              <textarea id="contact-message" name="message" required placeholder="How can we help you?"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info-container">
+          <div class="info-box">
+            <h3>Visit Our Bakery</h3>
+            <p><strong>Sweet Dreams Bakery</strong><br />123 Baker Street, Sweet City, SC 12345</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> hello@sweetdreamsbakery.com</p>
+            <p><strong>Hours:</strong> Mon-Fri: 8am - 8pm<br />Sat: 9am - 8pm<br />Sun: 10am - 6pm</p>
+          </div>
+          <div class="info-box">
+            <h3>Find Us</h3>
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.629671607519!2d-98.24357362483863!3d29.98634177519777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c829e00000000%3A0x280598715c0e0b3c!2sMr.%20Cheesecake!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        </section>
     </main>
 
     <footer></footer>
