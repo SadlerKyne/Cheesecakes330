@@ -6,6 +6,7 @@ const MAX_DELIVERY_DISTANCE_KM = 32; // 20 miles
  * Converts a street address into geographic coordinates using Mapbox API.
  * @param {string} address The address to geocode.
  * @returns {Promise<object|null>} An object with lat and lon, or null on error.
+ * To test use zip code 84532 or one in 20 miles for TRUE outside of 20 miles for FALSE
  */
 async function getCoordinatesForAddress(address) {
   const API_KEY = import.meta.env.VITE_MAPBOX_API_KEY;

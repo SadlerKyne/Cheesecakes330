@@ -1,3 +1,4 @@
+/*This is being rendered by an API to save time just for the project. Will be finalized at a later date*/
 import { loadHeaderFooter, highlightActiveLink } from '../utils.js';
 
 const API_URL = 'https://dummyjson.com/comments?limit=10'; // Get 10 comments
